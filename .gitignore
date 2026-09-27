@@ -1,0 +1,24 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Gradle
+.gradle/
+build/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+# 3D source/conversion files
+*.fbx
+*.fbm
+FBX2glTF.exe
+
+# Internal project documents
+Project details.docx
+README_FIRST_STEPS.txt

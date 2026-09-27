@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.chronorunner'
+version = '1.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(24)
+    }
+}
+
+def jmeVersion = '3.9.0-stable'
+
+dependencies {
+    implementation "org.jmonkeyengine:jme3-core:$jmeVersion"
+    implementation "org.jmonkeyengine:jme3-desktop:$jmeVersion"
+    implementation "org.jmonkeyengine:jme3-lwjgl3:$jmeVersion"
+    implementation "org.jmonkeyengine:jme3-plugins:$jmeVersion"
+    implementation "org.jmonkeyengine:jme3-effects:$jmeVersion"
+    implementation "org.jmonkeyengine:jme3-jogg:$jmeVersion"
+}
+
+application {
+    mainClass = 'com.chronorunner.Main'
+}
